@@ -5,17 +5,17 @@ import { StyleSheet, Text, View } from 'react-native'
 export default  props => { 
 
     const tag = () =>{
-        if (props.result <= 4){
-            return {color: '#d41500', letter: 'E'}
-          }else if(props.result <= 8){
-            return {color:'#d48d00', letter:'D'}
-          }else if(props.result <= 10){
-            return {color:'#d4c600', letter:'C'}
-          }else if(props.result <= 12){
-            return {color:'#43d400', letter:'B'}
-          }else{
-            return {color:'#00d46a', letter:'A'}
-          }
+      if (props.result <= 4){
+          return {color: '#d41500', letter: 'E'}
+      }else if(props.result <= 8){
+          return {color:'#d48d00', letter:'D'}
+      }else if(props.result <= 10){
+          return {color:'#d4c600', letter:'C'}
+      }else if(props.result <= 12){
+          return {color:'#43d400', letter:'B'}
+      }else{
+          return {color:'#00d46a', letter:'A'}
+      }
     }
     return (
         <View>
