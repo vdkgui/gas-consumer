@@ -6,22 +6,16 @@ export default  props => {
 
     const tag = () =>{
         if (props.result <= 4){
-            color = '#d41500'
-            letter = 'E'
+            return {color: '#d41500', letter: 'E'}
           }else if(props.result <= 8){
-            color = '#d48d00'
-            letter = 'D'
+            return {color:'#d48d00', letter:'D'}
           }else if(props.result <= 10){
-            color = '#d4c600'
-            letter = 'C'
+            return {color:'#d4c600', letter:'C'}
           }else if(props.result <= 12){
-            color = '#43d400'
-            letter = 'B'
+            return {color:'#43d400', letter:'B'}
           }else{
-            color = '#00d46a'
-            letter = 'A'
+            return {color:'#00d46a', letter:'A'}
           }
-        return {letter: letter, color: color}
     }
     return (
         <View>
