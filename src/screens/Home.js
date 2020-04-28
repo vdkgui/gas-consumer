@@ -20,7 +20,7 @@ export default (props) => {
     const { navigation } = props
 
     const calculate = () => {
-        regex = /^(?![0.]+$)\d+(\.\d{1,2})?$/
+        let regex = /^(?![0.]+$)\d+(\.\d{1,2})?$/
         
         if(regex.test(consumption) && regex.test(distance)) {
             setError(null)
